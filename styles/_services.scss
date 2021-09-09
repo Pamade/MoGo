@@ -1,0 +1,247 @@
+@media (min-width:320px){
+    .services{
+        &__container{
+            display: flex;
+            flex-direction: column;
+        }
+        &__single{
+            margin: 2rem auto;
+        }
+        &__texts{
+            width: 80%;
+            margin: 0 auto;
+        }
+        &__name{
+            font-size: 1.5rem;
+            margin: 1rem 0;
+        }
+        &__description{
+            font-size: 0.8rem;
+            color: #999999;
+            font-family: 'Roboto';
+        }
+    }
+
+    .design{   
+        margin: 0 auto;
+        text-align: center;
+        &__bg{
+            overflow-y: visible;        
+            height: 850px;
+            position: relative;
+            background-image: url("../assets/services/bg-services.png");
+        }
+        &__h4{
+            padding-top: 3rem;
+        }
+        &__tablet{
+            position: absolute;
+            width: 90%;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+        }
+        &__phone{
+            position: absolute;
+            bottom: -15%;
+            width: 50%;
+            right: 0;
+        }
+    }
+
+    .what-do{
+        margin-top: 8rem;
+        &__rectangle{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            margin: 0 auto;
+        }
+        &__image{
+            margin: 2rem auto;
+            width: 100%;
+        }
+        &__description-single{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid lightgray;
+            padding: 1rem;
+        }
+        &__description-text{
+            padding: 1rem;
+            border: 1px solid lightgray;
+            font-size: 0.8rem;
+            color: gray;
+            border-top: none;
+        }
+        &__description-text:nth-child(2){
+            border-bottom: none;
+            border-top: none;
+        }
+        &__name-description{
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+    }
+
+    .quote{
+        margin-top: 2rem;
+        margin-bottom: -2rem;
+        padding: 4rem 0;
+        background-color: #f8f8f8;
+        &__container{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        &__text{
+            margin: 2rem 0;
+            color: #999999;
+            font-family: $second-font;
+            font-style: italic;
+            line-height: 36px;
+        }
+        &__img{
+            max-width:150px;
+        }
+        &__author{
+            font-family: $third-font;
+        }
+    }
+}
+
+@media (min-width: 450px){
+    .services{
+        &__container{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__single{
+            width: 45%;
+        }
+    }
+
+    .design{   
+        &__tablet{
+            width: 60%;
+        }
+        &__phone{
+            bottom: -15%;
+            width: 30%;
+            right: 0;
+        }
+    }
+
+}
+
+@media (min-width:768px){
+    .design{   
+        &__tablet{
+            width: 45%;
+        }
+        &__phone{
+            bottom: -15%;
+            width: 20%;
+            right: 20%;
+        }
+    }
+
+    .what-do{
+        &__image{
+            width: 60%;
+        }
+    }
+    
+}
+
+@media (min-width:1024px){
+    .quote{
+        &__container{
+            width: 65%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__description{
+            width: 75%;
+        }
+        &__text{
+            margin: 0 auto;
+            text-align: left;
+        }
+        &__author{
+            text-align: left;
+        }
+    }
+}
+@media (min-width:1200px){
+    .services{
+        &__container{
+            width: 80%;
+            margin: 3rem auto;
+            text-align: left;
+            
+        }
+        &__image{
+            width: 32px;
+            height: 30px;
+        }
+        &__name{
+            margin: 0 0 1rem 0;
+            
+        }
+        &__single{
+            width: 30%;
+            display: flex;
+        }
+    }
+
+    .design{   
+        &__tablet{
+            width: 25%;
+        }
+        &__phone{
+            bottom: -15%;
+            width: 13%;
+            right: 30%;
+        }
+    }
+
+    .what-do{
+        &__rectangle{
+            flex-direction: row;
+            width: 1140px;
+            height: 380px;
+        }
+        &__description-container{
+            overflow-y: scroll;
+            min-height: 380px;
+        }
+        &__image{
+            margin: 0 2rem;
+        }
+        &__description-single{
+            justify-content: left;
+        }
+        &__description-text{
+            text-align: left;
+        }
+    }
+
+
+}
+
+@media (min-width: 1500px){
+    .quote{
+        &__container{
+            width: 45%;
+        }
+
+    }
+}

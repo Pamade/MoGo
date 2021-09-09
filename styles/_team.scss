@@ -1,0 +1,77 @@
+@media (min-width: 320px){
+    .team{
+        margin-bottom: 4rem;
+        &__container{
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            
+        }
+        &__single{
+            text-align: center;
+            overflow-x: hidden;
+        }
+        &__img{
+            margin: 4rem 0 1rem 0;
+            width: 380px;
+            height: 470px;
+            background-position: center;
+        }
+        &__member-name{
+            color: #333;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+        &__member-specialization{
+            color: #999;
+            font-size: 15px;
+            font-family: $second-font;
+            font-style: italic;
+        }
+        &__member-1{
+            background-image: url("../assets/team/man-1.jpg");
+            background-position: 20%;
+        }
+        &__member-2{
+            background-image: url("../assets/team/man-2.jpg");
+        }
+        &__member-3{
+            background-image: url("../assets/team/man-3.jpg");
+        }
+    }
+}
+
+@media (min-width:768px){   
+    .team{
+        &__container{
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 90%;
+        }
+        &__single{
+            width: 45%;
+        }
+        &__img{
+            margin: 2rem 0 1rem 0;
+        }
+    }
+}
+
+@media (min-width:1200px){
+    .team{
+        &__container{
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            width: 70%;
+        }
+        &__single{
+            width: 30%;
+        }
+    }
+}
